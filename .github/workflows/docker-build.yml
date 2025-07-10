@@ -3,8 +3,20 @@ name: Build and Push Docker Image
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'Dockerfile'
+      - 'docker-compose.yml'
+      - 'scripts/**'
+      - '.dockerignore'
+      - '.github/workflows/docker-build.yml'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'Dockerfile'
+      - 'docker-compose.yml'
+      - 'scripts/**'
+      - '.dockerignore'
+      - '.github/workflows/docker-build.yml'
 
 jobs:
   build:

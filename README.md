@@ -1,4 +1,4 @@
-# Intel Realsense T265 ROS2 Docker
+# T265 ROS2 Docker
 
 [![Build Status](https://github.com/atarbabgei/t265-ros2-docker/workflows/Build%20and%20Push%20Docker%20Image/badge.svg)](https://github.com/atarbabgei/t265-ros2-docker/actions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/atarbabgei/t265-ros2-docker)](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
@@ -9,6 +9,39 @@ Docker image for Intel RealSense T265 tracking camera with ROS2 Foxy on Ubuntu 2
 **Docker Hub:** [atarbabgei/t265-ros2-docker](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
 
 > **Note:** Docker images are automatically built and pushed to Docker Hub via GitHub Actions on every commit to the main branch.
+
+## Development Workflow
+
+This repository uses a development branch workflow:
+
+- **`main`** - Production-ready code, automatically builds and pushes to Docker Hub
+- **`develop`** - Development branch for new features and changes
+
+### Contributing
+
+1. **Create feature branch** from `develop`:
+   ```bash
+   git checkout develop
+   git pull origin develop
+   git checkout -b feature/your-feature-name
+   ```
+
+2. **Make your changes** and test locally
+
+3. **Create Pull Request** to merge into `develop`
+
+4. **Merge to main** when ready for production (triggers Docker build)
+
+### Automated Builds
+
+Docker builds are triggered only when these files change:
+- `Dockerfile`
+- `docker-compose.yml`
+- `scripts/**`
+- `.dockerignore`
+- `.github/workflows/docker-build.yml`
+
+Documentation changes (README, etc.) will NOT trigger Docker builds.
 
 ## Quick Start
 
