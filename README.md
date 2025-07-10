@@ -1,4 +1,4 @@
-# T265 ROS2 Docker
+# Intel Realsense T265 ROS2 Docker
 
 [![Build Status](https://github.com/atarbabgei/t265-ros2-docker/workflows/Build%20and%20Push%20Docker%20Image/badge.svg)](https://github.com/atarbabgei/t265-ros2-docker/actions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/atarbabgei/t265-ros2-docker)](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
