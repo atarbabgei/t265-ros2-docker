@@ -1,0 +1,56 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Build artifacts and logs
+*.log
+build/
+dist/
+*.tar.gz
+*.zip
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Node modules (if any)
+node_modules/
+
+# Scripts (already in the image)
+scripts/
+
+# Test files
+test/
+tests/
+
+# Docker files (not needed in container)
+docker-compose.yml
+Dockerfile*
+
+# Environment files
+.env
+.env.local
