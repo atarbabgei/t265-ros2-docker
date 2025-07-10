@@ -4,7 +4,11 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/atarbabgei/t265-ros2-docker)](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
 [![Docker Image Size](https://img.shields.io/docker/image-size/atarbabgei/t265-ros2-docker/latest)](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
 
-Docker image for Intel RealSense T265 tracking camera with ROS2 Foxy on Ubuntu 20 04. Tested to work across distributions with ROS2 Humble on Ubuntu 22 04. It may work on other distributions
+Docker image for Intel RealSense T265 tracking camera with ROS2 Foxy on Ubuntu 20.04
+
+This effort revives the discontinued Intel T265 tracking camera and makes it work with ROS2. This repository provides a Docker container based on Ubuntu 20.04 and ROS2 Foxy, including the latest T265-compatible SDK (librealsense SDK 2.53.1)
+
+Tested across distributions with ROS2 Humble on Ubuntu 22.04 and may work on other distributions
 
 **Docker Hub:** [atarbabgei/t265-ros2-docker](https://hub.docker.com/r/atarbabgei/t265-ros2-docker)
 
