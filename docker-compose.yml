@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  t265-ros2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/x86_64
+    container_name: t265-ros2
+    network_mode: host
+    privileged: true  # Add this for better hardware access
+    volumes:
+      - "/dev:/dev"
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"  # For GUI applications
+    environment:
+      - DISPLAY=${DISPLAY}
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+    device_cgroup_rules:
+      - "c 81:* rmw"
+      - "c 189:* rmw"
+    command: /bin/bash
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
